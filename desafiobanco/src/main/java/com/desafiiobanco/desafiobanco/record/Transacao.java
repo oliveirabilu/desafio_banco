@@ -1,4 +1,9 @@
 package com.desafiiobanco.desafiobanco.record;
 
-public record Transacao() {
+import java.time.OffsetDateTime;
+
+public record Transacao(
+        long valor,
+        OffsetDateTime dataHora
+) {
 }
